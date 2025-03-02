@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@theme {
+/*@theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+}*/
 
 :root {
   --background: #ffffff;
@@ -28,7 +28,6 @@ main{
   padding: 0;
 }
 .footerbg {
-  background-image: url('/footerbg.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
