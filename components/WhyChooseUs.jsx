@@ -82,14 +82,14 @@ export default function WhyChooseUs() {
                         alt="Vertical Image 1"
                         width={300}
                         height={450}
-                        className="object-cover rounded-md"
+                        className="object-cover rounded-md grayscale-75"
                     />
                     <Image
                         src="/images/vertical2.jpg"
                         alt="Vertical Image 2"
                         width={300}
                         height={450}
-                        className="object-cover rounded-md"
+                        className="object-cover rounded-md grayscale-75"
                     />
                 </div>
 

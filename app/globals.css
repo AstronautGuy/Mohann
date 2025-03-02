@@ -27,3 +27,22 @@ main{
   margin: 0;
   padding: 0;
 }
+.footerbg {
+  background-image: url('/footerbg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* On mobile, scale the image up so it gets clipped on the sides */
+@media (max-width: 767px) {
+  .footerbg {
+    background-size: 150%; /* Adjust this value as needed */
+  }
+}
+
+/* On medium screens and above, use cover */
+@media (min-width: 768px) {
+  .footerbg {
+    background-size: cover;
+  }
+}
