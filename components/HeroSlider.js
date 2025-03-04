@@ -32,7 +32,7 @@ const slides = [
 
 export default function HeroSlider() {
     return (
-        <div className="hero-slider w-full h-[400px] md:h-[600px] relative">
+        <div className="hero-slider w-full h-[400px] md:h-[600px] relative -mt-2">
             <Swiper
                 spaceBetween={30}
                 slidesPerView={1}
@@ -78,7 +78,7 @@ export default function HeroSlider() {
                     font-size: 28px; /* Adjust icon size */
                     width: 50px;
                     height: 50px;
-                    background-color: #be5c33; /* Background color */
+                    background-color: #ffffff; /* Background color */
                     color: black; /* Arrow color */
                     border-radius: 40%;
                     display: flex;
@@ -90,7 +90,7 @@ export default function HeroSlider() {
                 .hero-slider :global(.swiper-button-next:hover),
                 .hero-slider :global(.swiper-button-prev:hover) {
                     background-color: white;
-                    color: #be5c33;
+                    color: #ffffff;
                 }
 
                 .hero-slider :global(.swiper-button-next::after),
@@ -108,7 +108,7 @@ export default function HeroSlider() {
                 }
 
                 .hero-slider :global(.swiper-pagination-bullet-active) {
-                    background-color: #be5c33 !important;
+                    background-color: #ffffff !important;
                     opacity: 1;
                     width: 14px;
                     height: 14px;

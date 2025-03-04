@@ -4,7 +4,7 @@ import { Mail, Phone, MessageCircle } from "lucide-react";
 
 export default function Topbar() {
     return (
-        <nav className="fixed top-0 left-0 w-full bg-teal-600 text-black p-2 shadow-md z-50">
+        <nav className="fixed top-0 left-0 w-full h-10 bg-teal-600 text-black pl-8 pr-8 shadow-md z-50">
             <div className="max-w-8xl mx-auto flex flex-wrap justify-between items-center py-1 w-full">
                 <h1 className="hidden md:block text-sm lg:text-xl italic">
                     Celebrating 25 Years of Excellence

@@ -8,7 +8,9 @@ export default function Home() {
         <main className="!pt-37">
             <HeroSlider />
             <WhyChooseUs />
+            <div className="hidden md:block">
             <LogoScroller />
+            </div>
         </main>
     );
 }

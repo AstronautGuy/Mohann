@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="relative bg-white overflow-hidden">
+        <footer className="relative bg-none overflow-hidden -mt-40 md:mt-0">
             {/* 1) Top Angled/Wave Section with Background SVG */}
             <div className="footerbg relative overflow-hidden h-[560px] bg-no-repeat bg-center bg-[url('/footerbg.svg')]">
                 {/* Absolutely positioned text container inside the background */}
@@ -21,13 +21,13 @@ const Footer = () => {
             </div>
 
             {/* 2) Middle Section with Logos or Additional Info */}
-            <div className="bg-white py-8">
+            <div className="bg-white py-8 -mt-40 md:mt-0">
                 <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
                     {/* Left side */}
                     <div className="mb-6 sm:mb-0">
                         {/* Replace with an actual image or logo */}
                         <div className="flex items-center space-x-2">
-                            <div className="h-10 w-10 mt-2 bg-white"><img src="/images/LogoCropped.png" /></div>
+                            <div className="h-10 w-10 mt-2 bg-white"><img src="/images/logoCropped.png" alt="company Logo" /></div>
                             <h3 className="text-gray-700 font-semibold">
                                 Mohann Engineers
                             </h3>

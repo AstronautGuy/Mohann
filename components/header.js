@@ -11,10 +11,10 @@ export default function Header() {
     return (
         <>
             {/* Main Header (Below Topbar) */}
-            <header className="fixed top-[50px] left-0 w-full bg-white text-black p-4 shadow-md z-40">
+            <header className="fixed top-[40px] left-0 w-full bg-white text-black p-4 shadow-md z-40">
                 <div className="max-w-8xl mx-auto flex justify-between items-center">
                     <Link href="/">
-                        <Image src="/images/LogoNoBG.png" alt="Logo" width={100} height={50} />
+                        <Image src="../images/logoNoBg.png" alt="Logo" width={100} height={50} />
                     </Link>
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-6 text-black font-bold text-lg">
@@ -48,7 +48,7 @@ export default function Header() {
             >
                 {/* Close Button & Logo */}
                 <div className="flex items-center justify-between p-4 border-b border-black">
-                    <Image src="/images/LogoNoBG.png" alt="Logo" width={80} height={40} />
+                    <Image src="../images/logoNoBg.png" alt="Logo" width={80} height={40} />
                     <button onClick={() => setIsOpen(false)}>
                         <X size={28} color="black"/>
                     </button>
