@@ -3,52 +3,77 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="relative bg-none overflow-hidden -mt-40 md:mt-0">
-            {/* 1) Top Angled/Wave Section with Background SVG */}
-            <div className="footerbg relative overflow-hidden h-[560px] bg-no-repeat bg-center bg-[url('/footerbg.svg')]">
-                {/* Absolutely positioned text container inside the background */}
-                <div className="absolute inset-0 flex flex-col justify-center items-start pl-4 mt-20 md:mt-50 md:pl-20">
-                    <h2 className="text-3xl font-bold text-black md:mb-0 -mb-5">ORDER NOW</h2>
-                    <p className="mt-4 max-w-xl text-black">
+        <footer className="relative overflow-hidden">
+            {/*
+        1) Top Section with Polygon Background
+           + Subtle Overlay for Better Text Contrast
+      */}
+            <div className="relative bg-no-repeat border-b-1 bg-center h-[560px] bg-[url('/footerbg.svg')]">
+                {/*
+          Subtle overlay to darken the background slightly
+          so text stands out more (change opacity to taste).
+        */}
+                <div className="absolute inset-0 bg-black/40" />
+
+                {/* Text container, placed above overlay */}
+                <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 md:px-20">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-20">
+                        ORDER NOW
+                    </h2>
+                    <p className="max-w-xl text-white mb-6">
                         You can make a request for any of our services and we aim to reply
                         within an hour (during business hours) to give you an answer about
                         the cost and timing of the project.
                     </p>
-                    <button className="md:mt-6 mt-2 md:ml-0 ml-5 bg-black text-teal-600 font-semibold md:px-6 md:py-2 px-2 py-0 rounded shadow hover:bg-gray-100">
+                    <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-6 rounded-full shadow hover:scale-105 transition-transform">
                         SUBMIT REQUEST
                     </button>
                 </div>
             </div>
 
-            {/* 2) Middle Section with Logos or Additional Info */}
-            <div className="bg-white py-8 -mt-40 md:mt-0">
-                <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-                    {/* Left side */}
-                    <div className="mb-6 sm:mb-0">
-                        {/* Replace with an actual image or logo */}
-                        <div className="flex items-center space-x-2">
-                            <div className="h-10 w-10 mt-2 bg-white"><img src="/images/logoCropped.png" alt="company Logo" /></div>
-                            <h3 className="text-gray-700 font-semibold">
-                                Mohann Engineers
-                            </h3>
+            {/*
+        2) Middle Section with Logo & Additional Info
+           Removed negative margins and fixed heights
+           so the layout flows naturally.
+      */}
+            <div className="bg-black/40 py-8 shadow-md">
+                <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+                    {/* Left side: Logo & Tagline */}
+                    <div className="mb-6 sm:mb-0 flex flex-col mt-4">
+                        <div className="flex items-center space-x-3">
+                            <div className="h-20 w-20 relative">
+                                {/* Next/Image usage (replace with <img> if you prefer) */}
+                                <Image
+                                    src="/images/logoCropped.png"
+                                    alt="Company Logo"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
+                            </div>
+                            <div>
+                                <h3 className="text-gray-700 text-2xl font-semibold">
+                                    Mohann Engineers
+                                </h3>
+                                <p className="text-sm text-gray-500">
+                                    High-quality translations for the most demanding customers
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-sm text-gray-500">
-                            High-quality translations for the most demanding customers
-                        </p>
                     </div>
 
-                    {/* Right side */}
-                    <div>
+                    {/* Right side: Development & Support + Placeholder Logo */}
+                    <div className="text-center sm:text-right">
                         <p className="text-sm text-gray-700 mb-1">Development &amp; support</p>
-                        {/* Replace with an actual image or logo */}
-                        <div className="h-10 w-20 bg-gray-200" />
+                        <div className="h-10 w-20 bg-gray-200 mx-auto sm:mx-0" />
                     </div>
                 </div>
             </div>
 
-            {/* 3) Bottom copyright line */}
-            <div className="bg-gray-100 py-4">
-                <p className="text-center text-sm text-gray-500">
+            {/*
+        3) Bottom Section
+      */}
+            <div className="bg-[#2b6262] py-4">
+                <p className="text-center text-sm text-white">
                     © Copyright. All materials published...
                 </p>
             </div>
