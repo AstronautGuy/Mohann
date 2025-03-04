@@ -1,9 +1,12 @@
 "use client"
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MissionVisionValues from "@/components/MissionVisionValues";
+import { CheckCircle, Quote } from "lucide-react";
+
 
 export default function AboutSection() {
     useEffect(() => {
@@ -18,92 +21,140 @@ export default function AboutSection() {
 
                 {/* Left Column */}
                 <div data-aos="fade-up">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-2xl md:text-4xl font-bold text-black">
                         A World of Refrigeration &amp; Processing Possibilities
                     </h2>
-                    <p className="mt-4 text-gray-700 leading-relaxed">
-                        It was in 1956 that a team of highly qualified engineers came together and envisioned the future needs of farmers and the food processing industry. Today, with a facility spread across 10,000 sq.ft, Mohann is one of India's leading post-harvest &amp; cold chain management companies.
-                    </p>
-                    <p className="mt-4 text-gray-700 leading-relaxed">
+                    <p className="mt-4 text-gray-500 leading-relaxed">
+                        Our company has consistently met the evolving needs of clients by leveraging extensive expertise and years of experience to provide highly customized, effective, and scalable solutions. Through strategic partnerships with international technology leaders, we integrate world-class technologies into our operations, staying ahead of industry trends. This has solidified our position as a leader in the dairy beverage processing machinery sector, known for innovation and excellence.</p>
+                    <p className="mt-4 text-gray-500 leading-relaxed">
                         A subsidiary of the <strong>MOHANN GROUP OF COMPANIES</strong>, established in 1960, we draw from the wisdom of 63+ years of experience and present a whole new world of sustainable food processing solutions.
                     </p>
                     <div className="mt-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-md">
-                        <p className="text-gray-800">
-                            We have good credentials of working with Power, Oil &amp; Gas, Dairies and Pharma, Food Processing and Water Treatment Industrial Sectors.
+                        <p className="text-gray-700">
+                            As market and technology evolve, our solutions have continuously improved, streamlining production processes to enhance efficiency, performance, and scalability. We focus on innovation to optimize the entire production cycle, ensuring cost-effective and reliable systems that keep clients ahead of the competition.
                         </p>
                     </div>
-                    <p className="mt-4 text-gray-700 leading-relaxed">
-                        With over 46 years of cutting-edge technology and experience in the domain, we have built a reputation for providing reliable project solutions and dedicated service to a broad spectrum of clients across India and abroad as well.
+                    <p className="mt-4 text-gray-500 leading-relaxed">
+                        Our commitment to quality and client satisfaction is demonstrated by the successful completion of projects worldwide, where we consistently exceed client expectations. With decades of experience, we provide high-quality, future-proof solutions that foster business growth, enhance operational efficiency, and support long-term success, ensuring clients thrive in a changing marketplace.
                     </p>
                 </div>
 
                 {/* Right Column (Quote Box) */}
                 <div data-aos="fade-left" className="flex items-start md:justify-end">
-                    <div className="bg-blue-100 rounded-md text-xl  h-full md:w-3/4 p-6 shadow-md border-l-4 border-blue-600">
-                        <blockquote className="text-gray-700 italic">
-                            “Our reputation is our most treasured asset and the foundation on which we have built our company. Everyone at Mohann Engg knows that the only way to protect and improve our reputation is to exceed the client’s expectations, meet our commitments, innovate in our business, and deliver excellence.”
-                        </blockquote>
-                        <p className="mt-4 text-gray-900 font-semibold text-left">
-                            Mitesh Vadhiya
-                        </p>
-                        <p className="text-sm text-gray-600 text-left">CEO</p>
+                    <div className="relative w-full h-full flex justify-center items-center">
+                        {/* Smaller Blue Box (Peeking from Left, Right & Top) */}
+                        <div className="absolute top-30 left-6 right-6 bg-[#4b5da8] h-[65%]"></div>
+
+                        {/* Larger Rust Box */}
+                        <div className="relative bg-[#be5c33] text-xl p-8 shadow-md text-white w-4/5 min-h-3/4 flex flex-col justify-center">
+                            <blockquote className="italic">
+                                <Quote className="scale-x-[-1] opacity-40" size={50} />
+                                Our reputation is our most treasured asset and the foundation on which we have built our company. Everyone at <b>Mohann Engg</b> knows that the only way to protect and improve our reputation is to exceed the client’s expectations, meet our commitments, innovate in our business, and deliver excellence.
+                                <Quote className="inline-block ml-2" />
+                            </blockquote>
+                            <p className="mt-4 font-semibold text-left">Mitesh Vadhiya</p>
+                            <p className="text-sm text-left">CEO</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-            {/*<MissionVisionValues />*/}
-            <section className="md:flex flex-row justify-center md:space-x-20 spaxe-x-0 md:space-y-0 space-y-20 mt-10 mb-10">
-                <div data-aos="fade-right" data-aos-delay="250">
-                <svg width="383" height="260" viewBox="0 0 383 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 2L25 258" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 2L282 2.00195" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 258H281" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M282 2L281.5 126" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.5 134V258" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.999 133.75H381.001" stroke="#0db4b2" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="25" cy="126" r="25" fill="#be5c33"/>
-                    <foreignObject x="50" y="80" width="200" height="80">
-                        <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
-                            <h1 className="text-2xl font-bold">Heading</h1>
-                            <p className="text-lg">This is a paragraph inside the SVG.</p>
-                        </div>
-                    </foreignObject>
-                </svg>
+            <section className="flex flex-col md:flex-row min-h-[40rem] p-12 bg-gray-100 gap-12">
+                {/* Mission Statement */}
+                <div className="flex-1 bg-teal-500 text-white p-6 flex flex-col items-start text-justify">
+                    <div className="w-12 h-12 bg-white p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
+                    <h2 className="text-2xl font-bold">Mission Statement</h2>
+                    <p className="mt-4 text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <ul className="mt-6 space-y-2 text-lg">
+                        <li className="flex items-start gap-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>This text is fully editable.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-200 pt-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>This is a sample text.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-200 pt-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>It can be replaced with your own style.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="250">
-                <svg width="383" height="260" viewBox="0 0 383 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 2L25 258" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 2L282 2.00195" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 258H281" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M282 2L281.5 126" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.5 134V258" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.999 133.75H381.001" stroke="#be5c33" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="25" cy="126" r="25" fill="#4b5da8"/>
-                    <foreignObject x="50" y="80" width="200" height="80">
-                        <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
-                            <h1 className="text-2xl font-bold">Heading</h1>
-                            <p className="text-lg">This is a paragraph inside the SVG.</p>
-                        </div>
-                    </foreignObject>
-                </svg>
+
+                {/* Vision Statement */}
+                <div className="flex-1 bg-white shadow-md p-6 flex flex-col items-start text-justify">
+                    <div className="w-12 h-12 bg-gray-300 p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
+                    <h2 className="text-2xl font-bold">Vision Statement</h2>
+                    <p className="mt-4 text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <ul className="mt-6 space-y-2 text-lg">
+                        <li className="flex items-start gap-2">
+                            <CheckCircle className="w-6 h-6 text-black mt-1" />
+                            <span>This text is fully editable.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-400 pt-2">
+                            <CheckCircle className="w-6 h-6 text-black mt-1" />
+                            <span>This is a sample text.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-400 pt-2">
+                            <CheckCircle className="w-6 h-6 text-black mt-1" />
+                            <span>It can be replaced with your own style.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="250">
-                <svg width="383" height="260" viewBox="0 0 383 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 2L25 258" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 2L282 2.00195" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M25 258H281" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M282 2L281.5 126" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.5 134V258" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <path d="M281.999 133.75H381.001" stroke="#4b5da8" stroke-width="4" stroke-linecap="round"/>
-                    <circle cx="25" cy="126" r="25" fill="#be5c33"/>
-                    <foreignObject x="50" y="80" width="200" height="80">
-                        <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
-                            <h1 className="text-2xl font-bold">Heading</h1>
-                            <p className="text-lg">This is a paragraph inside the SVG.</p>
-                        </div>
-                    </foreignObject>
-                </svg>
+
+                {/* Values Statement */}
+                <div className="flex-1 bg-[#4b5da8] text-white p-6 flex flex-col items-start text-justify">
+                    <div className="w-12 h-12 bg-white p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
+                    <h2 className="text-2xl font-bold">Values Statement</h2>
+                    <p className="mt-4 text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <ul className="mt-6 space-y-2 text-lg">
+                        <li className="flex items-start gap-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>This text is fully editable.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-400 pt-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>This is a sample text.</span>
+                        </li>
+                        <li className="flex items-start gap-2 border-t border-dotted border-gray-400 pt-2">
+                            <CheckCircle className="w-6 h-6 text-white mt-1" />
+                            <span>It can be replaced with your own style.</span>
+                        </li>
+                    </ul>
                 </div>
+            </section>
+            <section className="bg-gradient-to-r from-amber-800 to-[#be5c33] text-black px-6 py-12 md:py-16">
+                <p data-aos="fade-up" className="text-Black leading-relaxed text-lg md:text-xl max-w-5xl mx-auto text-justify">
+                    <span className="text-black font-semibold text-xl md:text-3xl block">Creating Client Partnerships</span>
+                    <span className="text-black font-bold text-2xl md:text-4xl block mt-2 mb-4">
+            A Collaborative Approach to Success
+        </span>
+                    Our business is built on the belief that strong client partnerships are key to success. We work closely with
+                    clients, becoming an extension of their team and offering expertise that drives mutual growth. By fostering
+                    relationships based on trust and respect, we help clients achieve their goals, and in turn, our success follows.
+                    Our focus is on long-term collaboration that delivers valuable solutions and supports sustainable growth for both
+                    parties.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="200" className="text-black leading-relaxed text-lg md:text-xl max-w-5xl mx-auto text-justify mt-6">
+                    We serve a diverse range of clients across industries like manufacturing, packaging, food and beverage, and
+                    pharmaceuticals, including small businesses, mid-sized enterprises, and large corporations. By delivering tailored
+                    solutions and exceptional service, we ensure our clients' unique needs are met. Our support spans from initial
+                    consultation to implementation and beyond, optimizing processes and enhancing efficiency. With a commitment to
+                    excellence, we have built a reputation as a trusted partner in driving long-term growth and success for businesses
+                    of all sizes.
+                </p>
             </section>
         </>
     );

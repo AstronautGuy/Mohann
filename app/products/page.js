@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MissionVisionValues from "@/components/MissionVisionValues";
+import CardSlider from "@/components/cardSlider";
 
 export default function AboutSection() {
     useEffect(() => {
@@ -51,6 +52,7 @@ export default function AboutSection() {
                     </div>
                 </div>
             </section>
+            <CardSlider />
             <MissionVisionValues />
             <section className="md:flex flex-row justify-center md:space-x-20 spaxe-x-0 md:space-y-0 space-y-20 mt-10 mb-10">
                 <div data-aos="fade-right" data-aos-delay="250">

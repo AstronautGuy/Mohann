@@ -28,48 +28,37 @@ export default function WhyChooseUs() {
                         <span className="text-red-500">Choose</span>{" "}
                         <span className="text-black">Us</span>
                     </h2>
-                    <h3 className="text-4xl font-semibold mb-12">World class quality is our priority</h3>
-                    <p className="text-gray-700 mb-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                    </p>
+                    <h3 className="text-4xl font-semibold mb-8">World class quality is our priority</h3>
+                    <p className="text-gray-700 mb-6">At Mohann Engineers, our primary focus is on providing top-tier Quality and Energy-Saving solutions. We understand the importance of both performance and efficiency in today’s fast-paced industrial landscape. Over the years, we have built a reputation for delivering state-of-the-art equipment and processing lines that are not only reliable but also optimized to reduce energy consumption, helping our customers achieve sustainable growth while minimizing their environmental footprint.</p>
 
                     {/* Bullet Points with Icons */}
                     <ul className="space-y-4">
                         <li data-aos="fade-up" data-aos-delay="100" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
-                                <h4 className="font-bold">Extended Equipment Lifespan</h4>
-                                <p className="text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+                                <h4 className="font-bold">Contribute to your success.</h4>
+                                <p className="text-gray-600"></p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="200" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
-                                <h4 className="font-bold">High Performance</h4>
-                                <p className="text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+                                <h4 className="font-bold">Build a long term reliable business Partnership</h4>
+                                <p className="text-gray-600"></p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="300" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
-                                <h4 className="font-bold">Reliable & Durable</h4>
-                                <p className="text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+                                <h4 className="font-bold">Build quality for future</h4>
+                                <p className="text-gray-600"></p>
                             </div>
                         </li>
-                        <li data-aos="fade-up" data-aos-delay="300" className="flex items-start space-x-3">
+                        <li data-aos="fade-up" data-aos-delay="400" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
-                                <h4 className="font-bold">Customer Satisfaction</h4>
-                                <p className="text-gray-600">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+                                <h4 className="font-bold">Succeed Together</h4>
+                                <p className="text-gray-600"></p>
                             </div>
                         </li>
                     </ul>
@@ -92,7 +81,13 @@ export default function WhyChooseUs() {
                         className="object-cover rounded-md grayscale-75"
                     />
                 </div>
+            </div>
 
+            {/* FULL-WIDTH PARAGRAPH BELOW BOTH SECTIONS */}
+            <div data-aos="fade-up" className="max-w-7xl mx-auto mt-8 px-4 md:px-0 text-justify">
+                <p className="text-gray-700">Thanks to the high level of satisfaction that our esteemed customers have experienced from using our advanced systems, we have evolved into a globally preferred supplier of processing equipment and complete processing lines. Our commitment to reliable quality standards is unwavering, and we ensure that every solution we offer is backed by rigorous testing and quality assurance processes.</p>
+                <p className="text-gray-700 mt-4">One of our core principles at Mohann Engineers is the belief in truly understanding our customers' specific needs. We don’t simply provide off-the-shelf solutions; instead, we tailor our systems to precisely match the requirements of each customer, ensuring that they receive a customized solution that brings maximum value. Once we design and develop the perfect system, we stay involved, working closely with our clients until their staff is fully trained and proficient in the operation of the system. We ensure a smooth transition to daily use, providing ongoing support to guarantee long-term success and operational efficiency.</p>
+                <p className="text-gray-700 mt-4">By combining innovation, engineering excellence, and a customer-centric approach, Neologic Engineers has earned its place as a trusted partner in industries worldwide. Our dedication to continuous improvement and the application of the best available components in every system we design ensures that we remain at the forefront of the processing equipment industry, providing solutions that are not only effective but also sustainable for the future.</p>
             </div>
         </section>
     );

@@ -12,7 +12,7 @@ import "@/app/globals.css";
 const slides = [
     {
         src: "/images/slide1.jpeg",
-        heading: "Your Caption for Slide 1",
+        heading: "collection tank",
         caption: "Your Caption for Slide 1",
         link: "/about",
     },
