@@ -135,26 +135,40 @@ export default function AboutSection() {
                     </ul>
                 </div>
             </section>
-            <section className="bg-gradient-to-r from-amber-800 to-[#be5c33] text-black px-6 py-12 md:py-16">
-                <p data-aos="fade-up" className="text-Black leading-relaxed text-lg md:text-xl max-w-5xl mx-auto text-justify">
-                    <span className="text-black font-semibold text-xl md:text-3xl block">Creating Client Partnerships</span>
-                    <span className="text-black font-bold text-2xl md:text-4xl block mt-2 mb-4">
-            A Collaborative Approach to Success
-        </span>
-                    Our business is built on the belief that strong client partnerships are key to success. We work closely with
-                    clients, becoming an extension of their team and offering expertise that drives mutual growth. By fostering
-                    relationships based on trust and respect, we help clients achieve their goals, and in turn, our success follows.
-                    Our focus is on long-term collaboration that delivers valuable solutions and supports sustainable growth for both
-                    parties.
-                </p>
-                <p data-aos="fade-up" data-aos-delay="200" className="text-black leading-relaxed text-lg md:text-xl max-w-5xl mx-auto text-justify mt-6">
-                    We serve a diverse range of clients across industries like manufacturing, packaging, food and beverage, and
-                    pharmaceuticals, including small businesses, mid-sized enterprises, and large corporations. By delivering tailored
-                    solutions and exceptional service, we ensure our clients' unique needs are met. Our support spans from initial
-                    consultation to implementation and beyond, optimizing processes and enhancing efficiency. With a commitment to
-                    excellence, we have built a reputation as a trusted partner in driving long-term growth and success for businesses
-                    of all sizes.
-                </p>
+            <section data-aos="flip-left" data-aos-duration="3000" className="relative bg-cover bg-center text-black px-6 py-12 md:py-16">
+                {/* Background Image with Opacity */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-50"
+                    style={{ backgroundImage: `url('/images/aboutBg.jpg')` }}
+                ></div>
+
+                {/* Rust Overlay */}
+                <div className="absolute inset-0 bg-[#8B4513] opacity-25"></div>
+
+                {/* Content */}
+                <div className="relative z-10 max-w-5xl mx-auto text-black">
+                    <h1 data-aos="fade-right" data-aos-duration="3000" className="leading-relaxed text-lg md:text-xl text-justify">
+                        <span className="font-semibold text-xl md:text-3xl block">Creating Client Partnerships</span>
+                        <span className="font-bold text-2xl md:text-4xl block mt-2 mb-4">
+                A Collaborative Approach to Success
+            </span>
+                        </h1>
+                        <p data-aos="fade-right" data-aos-duration="3000" className="leading-relaxed text-lg md:text-xl text-justify font-normal">
+                        Our business is built on the belief that strong client partnerships are key to success. We work closely with
+                        clients, becoming an extension of their team and offering expertise that drives mutual growth. By fostering
+                        relationships based on trust and respect, we help clients achieve their goals, and in turn, our success follows.
+                        Our focus is on long-term collaboration that delivers valuable solutions and supports sustainable growth for both
+                        parties.
+                    </p>
+                    <p data-aos="fade-right" data-aos-duration="3000" className="leading-relaxed text-lg md:text-xl text-justify mt-6 font-normal">
+                        We serve a diverse range of clients across industries like manufacturing, packaging, food and beverage, and
+                        pharmaceuticals, including small businesses, mid-sized enterprises, and large corporations. By delivering tailored
+                        solutions and exceptional service, we ensure our clients' unique needs are met. Our support spans from initial
+                        consultation to implementation and beyond, optimizing processes and enhancing efficiency. With a commitment to
+                        excellence, we have built a reputation as a trusted partner in driving long-term growth and success for businesses
+                        of all sizes.
+                    </p>
+                </div>
             </section>
         </>
     );
