@@ -13,7 +13,7 @@ const Footer = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-20">
                         ORDER NOW
                     </h2>
-                    <p className="max-w-xl text-white mb-6">
+                    <p className="max-w-xl text-white mb-6 font-normal">
                         You can make a request for any of our services and we aim to reply
                         within an hour (during business hours) to give you an answer about
                         the cost and timing of the project.

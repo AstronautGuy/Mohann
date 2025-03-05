@@ -1,15 +1,12 @@
 import React from 'react';
 import '/app/globals.css'
 import { MapPin, Mail, Phone, Facebook, Instagram, } from "lucide-react";
+import MapSection from "@/components/maps";
 
 export default function ContactSection() {
     return (
-        <section
-            className="relative flex justify-center items-center min-h-screen bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/formBanner.jpg')" }}
-        >
-            {/* Semi-transparent black overlay */}
-            <div className="absolute inset-0 bg-[rgba(0,0,0,0.25)]" />
+        <>
+        <section className="relative flex justify-center items-center min-h-screen bg-gray-100">
 
             {/* Desktop Layout */}
             <div className="hidden lg:block relative min-w-[1100px] min-h-[550px] flex">
@@ -21,9 +18,9 @@ export default function ContactSection() {
                         height: 'calc(100% - 80px)'
                     }}
                 >
-                    <h2 className="text-white text-2xl font-medium mb-4 mt-10">Contact Info</h2>
+                    <h2 className="text-white text-2xl mb-4 mt-10">Contact Info</h2>
                     <ul className="">
-                        <li className="flex items-center space-x-3 mb-5">
+                        <li className="flex items-center space-x-3 mb-5 font-normal">
                             <MapPin size={120} className="opacity-50 -mt-40 hover:opacity-100 transition-opacity" />                            <span className="opacity-75">
                                 <strong>Registered Office & Unit I</strong><br />
                                 Plot No. 387, GIDC Savli, Manjusar, Dist Vadodara 391775, Gujarat India <br />
@@ -32,11 +29,11 @@ export default function ContactSection() {
                                 388365, Gujarat, India
                                 (C/o ABG Engineering)</span>
                         </li>
-                        <li className="flex items-center space-x-3 mb-10">
+                        <li className="flex items-center space-x-3 mb-10 font-normal">
                             <Mail size={30} className="opacity-50 hover:opacity-100 transition-opacity" />
                             <span className="opacity-75"><strong>sales@mohann.com</strong></span>
                         </li>
-                        <li className="flex items-center space-x-3 mb-10">
+                        <li className="flex items-center space-x-3 mb-10 font-normal">
                             <Phone size={30} className="opacity-50 hover:opacity-100 transition-opacity" />
                             <span className="opacity-75"><strong>+91-875812 4554</strong></span>
                         </li>
@@ -93,7 +90,7 @@ export default function ContactSection() {
                                 type="text"
                                 required
                                 placeholder="First Name"
-                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all"
+                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all font-normal"
                             />
                             {/* Bottom glow effect */}
                             <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-[#fa4c4c] origin-left transform scale-x-0 peer-focus:scale-x-100 transition-transform duration-300"></div>
@@ -104,10 +101,10 @@ export default function ContactSection() {
                                 type="text"
                                 required
                                 placeholder="Last Name"
-                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all"
+                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all font-normal"
                             />
                             {/* Bottom glow effect */}
-                            <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-[#fa4c4c] origin-left transform scale-x-0 peer-focus:scale-x-100 transition-transform duration-300"></div>
+                            <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-[#fa4c4c] origin-left transform scale-x-0 peer-focus:scale-x-100 transition-transform duration-300 "></div>
                         </div>
 
                         {/* Email */}
@@ -116,7 +113,7 @@ export default function ContactSection() {
                                 type="text"
                                 required
                                 placeholder="Email"
-                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all"
+                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all font-normal"
                             />
                             {/* Bottom glow effect */}
                             <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-[#fa4c4c] origin-left transform scale-x-0 peer-focus:scale-x-100 transition-transform duration-300"></div>
@@ -128,7 +125,7 @@ export default function ContactSection() {
                                 type="text"
                                 required
                                 placeholder="Phone Number"
-                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all"
+                                className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-b border-black outline-none transition-all font-normal"
                             />
                             {/* Bottom glow effect */}
                             <div className="absolute bottom-0 left-0 right-0 h-[4px] bg-[#fa4c4c] origin-left transform scale-x-0 peer-focus:scale-x-100 transition-transform duration-300"></div>
@@ -138,12 +135,12 @@ export default function ContactSection() {
                         <div className="relative w-full mb-[35px] group">
               <textarea
                   required
-                  className="peer w-full p-[10px_5px] text-[18px] text-[#333] border-none outline-none border-b border-[#777] resize-none"
+                  placeholder="Message...."
+                  className="peer w-full p-[10px_5px] text-[18px] text-[#333] outline-none border border-[#777] resize-none font-normal"
               />
-                            <span className="pointer-events-none absolute left-[5px] top-[10px] text-[17px] font-light transition-all
+                            <span className="pointer-events-none absolute left-[5px] top-[5px] text-[17px] font-light transition-all
                 peer-focus:-translate-y-5 peer-focus:text-xs peer-focus:font-semibold peer-focus:tracking-wider peer-focus:text-pink-500
                 peer-valid:-translate-y-5 peer-valid:text-xs peer-valid:font-semibold peer-valid:tracking-wider peer-valid:text-pink-500">
-                Write Your Message Here.
               </span>
                         </div>
 
@@ -275,5 +272,7 @@ export default function ContactSection() {
                 </div>
             </div>
         </section>
+            <MapSection />
+    </>
     );
 }

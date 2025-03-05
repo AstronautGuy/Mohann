@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import MissionVisionValues from "@/components/MissionVisionValues";
 import CardSlider from "@/components/cardSlider";
 
 export default function AboutSection() {
@@ -22,19 +21,27 @@ export default function AboutSection() {
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                             A World of Refrigeration &amp; Processing Possibilities
                         </h2>
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            It was in 1956 that a team of highly qualified engineers came together and envisioned the future needs of farmers and the food processing industry. Today, with a facility spread across 10,000 sq.ft, Mohann is one of India's leading post-harvest &amp; cold chain management companies.
+                        <p className="mt-4 text-gray-700 leading-relaxed font-normal">
+                            It was in 1956 that a team of highly qualified engineers came together
+                            and envisioned the future needs of farmers and the food processing industry.
+                            Today, with a facility spread across 10,000 sq.ft, Mohann is one of India's
+                            leading post-harvest &amp; cold chain management companies.
                         </p>
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            A subsidiary of the <strong>MOHANN GROUP OF COMPANIES</strong>, established in 1960, we draw from the wisdom of 63+ years of experience and present a whole new world of sustainable food processing solutions.
+                        <p className="mt-4 text-gray-700 leading-relaxed font-normal">
+                            A subsidiary of the <strong>MOHANN GROUP OF COMPANIES</strong>, established
+                            in 1960, we draw from the wisdom of 63+ years of experience and present a whole
+                            new world of sustainable food processing solutions.
                         </p>
                         <div className="mt-6 p-4 border-l-4 border-blue-600 bg-blue-50 rounded-md">
                             <p className="text-gray-800">
-                                We have good credentials of working with Power, Oil &amp; Gas, Dairies and Pharma, Food Processing and Water Treatment Industrial Sectors.
+                                We have good credentials of working with Power, Oil &amp; Gas, Dairies and
+                                Pharma, Food Processing and Water Treatment Industrial Sectors.
                             </p>
                         </div>
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            With over 46 years of cutting-edge technology and experience in the domain, we have built a reputation for providing reliable project solutions and dedicated service to a broad spectrum of clients across India and abroad as well.
+                        <p className="mt-4 text-gray-700 leading-relaxed font-normal">
+                            With over 46 years of cutting-edge technology and experience in the domain,
+                            we have built a reputation for providing reliable project solutions and dedicated
+                            service to a broad spectrum of clients across India and abroad as well.
                         </p>
                     </div>
 
@@ -42,7 +49,11 @@ export default function AboutSection() {
                     <div data-aos="fade-left" className="flex items-start md:justify-end">
                         <div className="bg-blue-100 rounded-md text-xl  h-full md:w-3/4 p-6 shadow-md border-l-4 border-blue-600">
                             <blockquote className="text-gray-700 italic">
-                                “Our reputation is our most treasured asset and the foundation on which we have built our company. Everyone at Mohann Engg knows that the only way to protect and improve our reputation is to exceed the client’s expectations, meet our commitments, innovate in our business, and deliver excellence.”
+                                “Our reputation is our most treasured asset and the foundation on
+                                which we have built our company. Everyone at Mohann Engg knows that
+                                the only way to protect and improve our reputation is to exceed the
+                                client’s expectations, meet our commitments, innovate in our business,
+                                and deliver excellence.”
                             </blockquote>
                             <p className="mt-4 text-gray-900 font-semibold text-left">
                                 Mitesh Vadhiya
@@ -53,7 +64,6 @@ export default function AboutSection() {
                 </div>
             </section>
             <CardSlider />
-            <MissionVisionValues />
             <section className="md:flex flex-row justify-center md:space-x-20 spaxe-x-0 md:space-y-0 space-y-20 mt-10 mb-10">
                 <div data-aos="fade-right" data-aos-delay="250">
                     <svg width="383" height="260" viewBox="0 0 383 260" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +77,7 @@ export default function AboutSection() {
                         <foreignObject x="50" y="80" width="200" height="80">
                             <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
                                 <h1 className="text-2xl font-bold">Heading</h1>
-                                <p className="text-lg">This is a paragraph inside the SVG.</p>
+                                <p className="text-lg font-normal">This is a paragraph inside the SVG.</p>
                             </div>
                         </foreignObject>
                     </svg>
@@ -84,7 +94,7 @@ export default function AboutSection() {
                         <foreignObject x="50" y="80" width="200" height="80">
                             <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
                                 <h1 className="text-2xl font-bold">Heading</h1>
-                                <p className="text-lg">This is a paragraph inside the SVG.</p>
+                                <p className="text-lg font-normal">This is a paragraph inside the SVG.</p>
                             </div>
                         </foreignObject>
                     </svg>
@@ -101,7 +111,7 @@ export default function AboutSection() {
                         <foreignObject x="50" y="80" width="200" height="80">
                             <div xmlns="http://www.w3.org/1999/xhtml" className="text-center">
                                 <h1 className="text-2xl font-bold">Heading</h1>
-                                <p className="text-lg">This is a paragraph inside the SVG.</p>
+                                <p className="text-lg font-normal">This is a paragraph inside the SVG.</p>
                             </div>
                         </foreignObject>
                     </svg>
