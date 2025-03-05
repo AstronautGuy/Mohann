@@ -1,21 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import { Twitter, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer className="relative overflow-hidden">
-            {/*
-        1) Top Section with Polygon Background
-           + Subtle Overlay for Better Text Contrast
-      */}
-            <div className="relative bg-no-repeat border-b-1 bg-center h-[560px] bg-[url('/footerbg.svg')]">
-                {/*
-          Subtle overlay to darken the background slightly
-          so text stands out more (change opacity to taste).
-        */}
-                <div className="absolute inset-0 bg-black/40" />
-
-                {/* Text container, placed above overlay */}
+        <>
+        <footer className="relative overflow-hidden bg-gradient-to-b from-10% from-white to-80% to-[#1c1c1c]">
+            {/* Top Section */}
+            <div className="relative flex bg-no-repeat bg-center bg-cover h-[560px] bg-[url('/footerbg.svg')]">
+                <div className="absolute inset-0" />
                 <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 md:px-20">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-20">
                         ORDER NOW
@@ -25,59 +18,45 @@ const Footer = () => {
                         within an hour (during business hours) to give you an answer about
                         the cost and timing of the project.
                     </p>
-                    <button className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-6 rounded-full shadow hover:scale-105 transition-transform">
-                        SUBMIT REQUEST
+                    <button className="bg-black text-white font-semibold py-3 px-6 rounded-full shadow hover:scale-105 transition-transform">
+                        <a href="/contact" >SUBMIT REQUEST</a>
                     </button>
                 </div>
-            </div>
-
-            {/*
-        2) Middle Section with Logo & Additional Info
-           Removed negative margins and fixed heights
-           so the layout flows naturally.
-      */}
-            <div className="bg-black/40 py-8 shadow-md">
-                <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-                    {/* Left side: Logo & Tagline */}
-                    <div className="mb-6 sm:mb-0 flex flex-col mt-4">
-                        <div className="flex items-center space-x-3">
-                            <div className="h-20 w-20 relative">
-                                {/* Next/Image usage (replace with <img> if you prefer) */}
-                                <Image
-                                    src="/images/logoCropped.png"
-                                    alt="Company Logo"
-                                    layout="fill"
-                                    objectFit="contain"
-                                />
-                            </div>
-                            <div>
-                                <h3 className="text-gray-700 text-2xl font-semibold">
-                                    Mohann Engineers
-                                </h3>
-                                <p className="text-sm text-gray-500">
-                                    High-quality translations for the most demanding customers
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Right side: Development & Support + Placeholder Logo */}
-                    <div className="text-center sm:text-right">
-                        <p className="text-sm text-gray-700 mb-1">Development &amp; support</p>
-                        <div className="h-10 w-20 bg-gray-200 mx-auto sm:mx-0" />
-                    </div>
+                <div className="relative flex flex-row gap-[30px] mt-90 ml-70 hidden md:inline-flex">
+                    <a
+                        href="https://facebook.com/your_page"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-white text-black text-[30px] no-underline transition duration-300 ease-in-out"
+                    >
+                        <Facebook />
+                    </a>
+                    <a
+                        href="https://twitter.com/your_page"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-white text-black text-[30px] no-underline transition duration-300 ease-in-out"
+                    >
+                        <Twitter />
+                    </a>
+                    <a
+                        href="https://instagram.com/your_page"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-white text-black text-[30px] no-underline transition duration-300 ease-in-out"
+                    >
+                        <Instagram />
+                    </a>
                 </div>
             </div>
-
-            {/*
-        3) Bottom Section
-      */}
-            <div className="bg-[#2b6262] py-4">
-                <p className="text-center text-sm text-white">
-                    © Copyright. All materials published...
-                </p>
-            </div>
+            <section className="overflow-x-hidden w-auto flex flex-col mt-5 bg-[#1c1c1c] text-white text-center justify-between items-center">
+    <div className="w-full bg-[#1c1c1c] text-[#0db4b2] text-center pt-0 pr-[30px] pb-[30px] pl-[30px] text-[14px] flex justify-between items-center underline-offset-5 underline font-light">
+        <span>&copy; Mohann Engineers 2025-2026</span>
+        <span className="powered">Powered by <a href="https://devinfotech.net" target="_blank"><strong>DevInfotech</strong></a></span>
+    </div>
+            </section>
         </footer>
+    </>
     );
 };
 
