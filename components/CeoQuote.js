@@ -13,13 +13,18 @@ export default function CeoQuote() {
             text: " knows that the only way to protect and improve our reputation is to exceed the client’s expectations, meet our commitments, innovate in our business, and deliver excellence.",
             bold: false,
         },
+
     ];
 
     return (
         <blockquote className="italic !font-light -mt-20 ml-40 text-black text-xl">
             <Quote className="scale-x-[-1]" size={50} />
-            <TypewriterText segments={segments} speed={50} initialDelay={0} />
+            <TypewriterText segments={segments} speed={30} initialDelay={0} />
             <Quote className="inline-block ml-2" size={50} />
+            <div className="mt-4 text-right" data-aos="fade-in" data-aos-delay="7000">
+                <p className="font-semibold">Mitesh Vadhiya</p>
+                <p className="font-bold">CEO</p>
+            </div>
         </blockquote>
     );
 }

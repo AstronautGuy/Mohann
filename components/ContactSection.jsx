@@ -1,6 +1,6 @@
 import React from 'react';
 import '/app/globals.css'
-import { MapPin, Mail, Phone, Facebook, Instagram, } from "lucide-react";
+import { MapPin, Mail, Phone, Facebook, Instagram } from "lucide-react";
 import MapSection from "@/components/maps";
 
 export default function ContactSection() {
@@ -50,11 +50,9 @@ export default function ContactSection() {
                             </a>
                         </li>
                         <li className="mr-4">
-                            <a href="#">
                                 <a href="#">
                                     <Facebook size={30} className="opacity-50 hover:opacity-100 transition-opacity" />
                                 </a>
-                            </a>
                         </li>
                         <li className="mr-4">
                             <a href="#">
