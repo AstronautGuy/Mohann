@@ -17,8 +17,8 @@ export default function Header() {
                         <Image src="../images/logoNoBg.png" alt="Logo" width={100} height={50} />
                     </Link>
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex space-x-6 text-black font-bold text-lg">
-                        <nav className="hidden md:flex items-center text-black font-bold">
+                    <nav className="hidden md:flex space-x-6 text-black font-bold text-md">
+                        <nav className="hidden md:flex items-center text-black font-bold uppercase">
                             <Link href="/about" className="hover:text-gray-400 px-4">About Us</Link>
                             <span className="h-5 w-0.5 bg-amber-600"></span>
                             <Link href="/products" className="hover:text-gray-400 px-4">Products</Link>

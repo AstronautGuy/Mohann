@@ -21,7 +21,7 @@ export default function CeoQuote() {
             <Quote className="scale-x-[-1]" size={50} />
             <TypewriterText segments={segments} speed={30} initialDelay={0} />
             <Quote className="inline-block ml-2" size={50} />
-            <div className="mt-4 text-right" data-aos="fade-in" data-aos-delay="7000">
+            <div className="mt-4 text-left" data-aos="fade-in" data-aos-delay="9000">
                 <p className="font-semibold">Mitesh Vadhiya</p>
                 <p className="font-bold">CEO</p>
             </div>

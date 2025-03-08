@@ -70,6 +70,6 @@ main{
 .animate-blink {
   animation: blink 1s step-start infinite;
 }
-[data-aos-delay="7000"] {
-  transition-delay: 7s !important;
+[data-aos-delay="9000"] {
+  transition-delay: 9s !important;
 }

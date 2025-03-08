@@ -34,26 +34,29 @@ export default function Home() {
                                     <Phone className="fill-[#0db4b2] w-20 h-20" />
                                 </div>
                                 <h2 className="text-2xl font-semibold mb-3">Talk to Sales</h2>
-                                <p className="text-gray-700 mb-4">
+                                <p className="text-gray-700 mb-4 font-normal">
                                     Interested in our products or services? Just pick up the phone to chat with a member of our sales team.
                                 </p>
                                 <p className="font-light mb-2 text-[#0db4b2]">+1 877 929 0687</p>
-                                <a href="#" className="text-[#0db4b2] hover:underline">
-                                    View all global numbers
-                                </a>
+                                <p className="font-light mb-2 text-[#0db4b2]">+1 877 929 0687</p>
+                                <p className="font-light mb-2 text-[#0db4b2]">+1 877 929 0687</p>
+                                <p className="font-light mb-2 text-[#0db4b2]">+1 877 929 0687</p>
                             </div>
                             {/* Card 2 */}
                             <div className="flex-1 bg-white shadow-lg p-6 text-center">
                                 <div className="flex justify-center mb-3">
                                     <MessagesSquare className="fill-[#0db4b2] text-lg w-20 h-20" />
                                 </div>
-                                <h2 className="text-2xl font-light mb-3">Contact Customer Support</h2>
-                                <p className="text-gray-700 mb-4">
+                                <h2 className="text-2xl mb-3">Contact Customer Support</h2>
+                                <p className="text-gray-700 mb-4 font-normal">
                                     Sometimes you need a little help. Don’t worry… we’re here for you.
                                 </p>
-                                <button className="bg-[#0db4b2] text-white px-4 py-2 rounded hover:bg-[#be5c33]">
+                                <button className="bg-[#0db4b2] text-white px-4 py-2 rounded hover:bg-[#be5c33] mb-4">
                                     Contact Support
                                 </button>
+                                <p className="text-gray-700 mb-2 font-normal">
+                                    Or Email Us at <br /><strong><a href="#">sales@mohann.com</a></strong>
+                                </p>
                             </div>
                         </div>
                     </div>
