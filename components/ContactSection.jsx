@@ -18,7 +18,7 @@ export default function ContactSection() {
                         height: 'calc(100% - 80px)'
                     }}
                 >
-                    <h2 className="text-white text-2xl mb-4 mt-10">Contact Info</h2>
+                    <h2 className=" text-2xl mb-4 mt-10">Contact Info</h2>
                     <ul className="">
                         <li className="flex items-center space-x-3 mb-5 font-normal">
                             <MapPin size={120} className="opacity-50 -mt-40 hover:opacity-100 transition-opacity" />                            <span className="opacity-75">

@@ -60,7 +60,7 @@ export default function AboutSection() {
         </section>
             <section className="flex flex-col md:flex-row min-h-[40rem] p-12 bg-gray-100 gap-12">
                 {/* Mission Statement */}
-                <div className="flex-1 bg-teal-500 text-white p-6 flex flex-col items-start text-justify">
+                <div data-aos="zoom-in" className="flex-1 bg-teal-500 text-white p-6 flex flex-col items-start text-justify">
                     <div className="w-12 h-12 bg-white p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
                     <h2 className="text-2xl font-bold">Mission Statement</h2>
                     <p className="mt-4 text-lg font-normal">
@@ -85,7 +85,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Vision Statement */}
-                <div className="flex-1 bg-white shadow-md p-6 flex flex-col items-start text-justify">
+                <div data-aos="zoom-in" className="flex-1 bg-white shadow-md p-6 flex flex-col items-start text-justify">
                     <div className="w-12 h-12 bg-gray-300 p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
                     <h2 className="text-2xl font-bold">Vision Statement</h2>
                     <p className="mt-4 text-lg font-normal">
@@ -110,7 +110,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Values Statement */}
-                <div className="flex-1 bg-[#4b5da8] text-white p-6 flex flex-col items-start text-justify">
+                <div data-aos="zoom-in" className="flex-1 bg-[#4b5da8] text-white p-6 flex flex-col items-start text-justify">
                     <div className="w-12 h-12 bg-white p-2 rounded-full mb-4">{/* Replace with your SVG */}</div>
                     <h2 className="text-2xl font-bold">Values Statement</h2>
                     <p className="mt-4 text-lg font-normal">

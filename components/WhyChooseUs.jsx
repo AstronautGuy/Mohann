@@ -44,28 +44,28 @@ export default function WhyChooseUs() {
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
                                 <h4 className="font-bold">Contribute to your success.</h4>
-                                <p className="text-gray-600 font-normal">bla bla bla bla</p>
+                                <p className="text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="200" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
                                 <h4 className="font-bold">Build a long term reliable business Partnership</h4>
-                                <p className="text-gray-600 font-normal">bla bla bla bla</p>
+                                <p className="text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="300" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
                                 <h4 className="font-bold">Build quality for future</h4>
-                                <p className="text-gray-600 font-normal">bla bla bla bla</p>
+                                <p className="text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="400" className="flex items-start space-x-3">
                             <CheckCircle className="w-6 h-6 text-red-500 mt-1" />
                             <div>
                                 <h4 className="font-bold">Succeed Together</h4>
-                                <p className="text-gray-600 font-normal">bla bla bla bla</p>
+                                <p className="text-gray-600 font-normal">Lorem ipsum dolor sit amet.</p>
                             </div>
                         </li>
                     </ul>
