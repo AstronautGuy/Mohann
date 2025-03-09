@@ -11,19 +11,19 @@ import "@/app/globals.css";
 
 const slides = [
     {
-        src: "/images/slide1.jpeg",
-        heading: "collection tank",
+        src: "/images/slides/slide1.jpeg",
+        heading: "COLLECTION TANK",
         caption: "Your Caption for Slide 1",
         link: "/about",
     },
     {
-        src: "/images/slide2.jpeg",
+        src: "/images/slides/slide2.jpeg",
         heading: "Your Caption for Slide 2",
         caption: "Your Caption for Slide 2",
         link: "",
     },
     {
-        src: "/images/slide3.jpeg",
+        src: "/images/slides/slide3.jpeg",
         heading: "Your Caption for Slide 3",
         caption: "Your Caption for Slide 3",
         link: "",

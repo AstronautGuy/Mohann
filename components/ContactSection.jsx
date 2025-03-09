@@ -147,7 +147,7 @@ export default function ContactSection() {
                             <input
                                 type="submit"
                                 value="Submit"
-                                className="cursor-pointer bg-black text-white py-[12px] px-4 hover:bg-[#fa4c4c] hover:font-medium transition-all"
+                                className="cursor-pointer bg-black text-white py-[12px] px-4 hover:bg-[#fa4c4c] transition-all"
                             />
                         </div>
                     </div>

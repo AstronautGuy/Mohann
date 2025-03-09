@@ -14,7 +14,7 @@ export default function ProductCarousel({ heading, products }) {
                 >
                     {products.map((product) => (
                         <div key={product.id} className="min-w-[250px]">
-                            <ProductCard product={product} />
+                            <ProductCard product={product}/>
                         </div>
                     ))}
                 </motion.div>

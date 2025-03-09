@@ -6,10 +6,10 @@ import "swiper/css";
 import Image from "next/image";
 
 const logos = [
-    { src: "/images/logo1.jpeg", alt: "Logo 1" },
-    { src: "/images/logo2.jpeg", alt: "Logo 2" },
-    { src: "/images/logo3.jpeg", alt: "Logo 3" },
-    { src: "/images/logo4.jpeg", alt: "Logo 4" },
+    { src: "/images/clients/logo1.jpeg", alt: "Logo 1" },
+    { src: "/images/clients/logo2.jpeg", alt: "Logo 2" },
+    { src: "/images/clients/logo3.jpeg", alt: "Logo 3" },
+    { src: "/images/clients/logo4.jpeg", alt: "Logo 4" },
     // Add more logos as needed
 ];
 

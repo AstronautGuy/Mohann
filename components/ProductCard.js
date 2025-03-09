@@ -31,8 +31,8 @@ export default function ProductCard({ product }) {
                         className="object-cover"
                     />
                 </motion.div>
-                <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                <p className="text-gray-700 flex-grow">{product.description}</p>
+                <h3 className="text-md font-semibold mb-2">{product.name}</h3>
+                <p className="text-gray-700 flex-grow font-light">{product.description}</p>
                 <div className="mt-4">
                     <span className="text-lg font-bold text-indigo-600">
                         ${product.price}

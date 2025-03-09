@@ -3,31 +3,45 @@ import ProductCarousel from "../components/ProductCarousel";
 const productsForPage1 = [
     {
         id: 1,
-        name: "Category One",
+        name: "INDUSTRIAL EQUIPMENTS",
         description: "This is a description for product one.",
         price: "29.99",
-        image: "/products/product1.jpg",
+        image: "/images/products/industrial.jpg",
     },
     {
         id: 2,
-        name: "Category Two",
+        name: "SS FEED HOPPERS",
         description: "This is a description for product two.",
         price: "39.99",
-        image: "/products/product2.jpg",
+        image: "/images/products/hoppers.jpg",
     },
     {
         id: 3,
-        name: "Category Three",
+        name: "SS STORAGE TANKS",
         description: "This is a description for product two.",
         price: "39.99",
-        image: "/products/product2.jpg",
+        image: "/images/products/tanks.jpg",
     },
     {
         id: 4,
-        name: "Category Four",
+        name: "DAIRY EQUIPMENTS",
         description: "This is a description for product two.",
         price: "39.99",
-        image: "/products/product2.jpg",
+        image: "/images/products/dairy.jpg",
+    },
+    {
+        id: 5,
+        name: "SS CUSTOM TANKS",
+        description: "This is a description for product two.",
+        price: "39.99",
+        image: "/images/products/custom.jpg",
+    },
+    {
+        id: 6,
+        name: "SS STORAGE SILOS",
+        description: "This is a description for product two.",
+        price: "39.99",
+        image: "/images/products/silos.jpg",
     },
 ];
 
