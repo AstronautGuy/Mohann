@@ -16,7 +16,7 @@ export default function Home() {
                     {/* Banner Content */}
                     <div className="relative z-10 flex items-center justify-center h-full px-4 text-center">
                         <div className="text-white max-w-3xl">
-                            <h1 className="text-4xl font-bold mb-2">Get in touch</h1>
+                            <h1 className="text-4xl font-bold mb-2">Get in touch !!</h1>
                             <p className="text-lg">
                                 Want to get in touch? We’d love to hear from you. Here’s how you can reach us…
                             </p>
@@ -29,7 +29,9 @@ export default function Home() {
                     <div className="mx-auto max-w-5xl px-4">
                         <div className="flex flex-col md:flex-row justify-center items-stretch gap-4">
                             {/* Card 1 */}
-                            <div className="flex-1 bg-white shadow-lg p-6 text-center">
+                            <div
+                                data-aos="fade-down"
+                                className="flex-1 bg-white shadow-lg p-6 text-center">
                                 <div className="flex justify-center mb-3">
                                     <Phone className="fill-[#0db4b2] w-20 h-20" />
                                 </div>
@@ -43,7 +45,9 @@ export default function Home() {
                                 <p className="font-light mb-2 text-[#0db4b2]">+1 877 929 0687</p>
                             </div>
                             {/* Card 2 */}
-                            <div className="flex-1 bg-white shadow-lg p-6 text-center">
+                            <div
+                                data-aos="fade-down"
+                                className="flex-1 bg-white shadow-lg p-6 text-center">
                                 <div className="flex justify-center mb-3">
                                     <MessagesSquare className="fill-[#0db4b2] text-lg w-20 h-20" />
                                 </div>

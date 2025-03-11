@@ -12,6 +12,7 @@ export default function ContactSection() {
             <div className="hidden lg:block relative min-w-[1100px] min-h-[550px] flex">
                 {/* Left Panel: Contact Info (Desktop) */}
                 <div
+                    data-aos="fade-right"
                     className="absolute top-[40px] w-[360px] p-[20px] flex flex-col items-center justify-center z-[1] bg-[#fa4c4c]"
                     style={{
                         boxShadow: '0 10px 10px rgba(0,0,0,0.5)',
@@ -21,7 +22,8 @@ export default function ContactSection() {
                     <h2 className=" text-2xl mb-4 mt-10">Contact Info</h2>
                     <ul className="">
                         <li className="flex items-center space-x-3 mb-5 font-normal">
-                            <MapPin size={120} className="opacity-50 -mt-40 hover:opacity-100 transition-opacity" />                            <span className="opacity-75">
+                            <MapPin size={120} className="opacity-50 -mt-40 hover:opacity-100 transition-opacity" />
+                            <span className="opacity-75">
                                 <strong>Registered Office & Unit I</strong><br />
                                 Plot No. 387, GIDC Savli, Manjusar, Dist Vadodara 391775, Gujarat India <br />
                                 <strong>Associated Unit II</strong><br />
@@ -71,6 +73,8 @@ export default function ContactSection() {
 
                 {/* Right Panel: Contact Form (Desktop) */}
                 <div
+                    data-aos="fade-left"
+                    className="absolute top-[40px] w-[360px] p-[20px] flex flex-col items-center justify-center z-[1] bg-[#fa4c4c]"
                     className="absolute bg-white px-[50px] py-[70px]"
                     style={{
                         paddingLeft: '250px',

@@ -3,10 +3,12 @@
 import Products2 from "@/components/Products2";
 
 const products = [
-    { id: 1, name: "Category One", description: "Description for product one.", price: "29.99", image: "/products/product1.jpg" },
-    { id: 2, name: "Category Two", description: "Description for product two.", price: "39.99", image: "/products/product2.jpg" },
-    { id: 3, name: "Category Three", description: "Description for product three.", price: "49.99", image: "/products/product3.jpg" },
-    { id: 4, name: "Category Four", description: "Description for product four.", price: "59.99", image: "/products/product4.jpg" },
+    { id: 1, name: "Industrial Equipments", description: "Description for product one.", price: "29.99", image: "/images/products/industrial.jpg" },
+    { id: 2, name: "SS Feed Hoppers", description: "Description for product two.", price: "39.99", image: "/images/products/hoppers.jpg" },
+    { id: 3, name: "SS Storage Tanks", description: "Description for product three.", price: "49.99", image: "/images/products/tanks.jpg" },
+    { id: 4, name: "Dairy Equipments", description: "Description for product four.", price: "59.99", image: "/images/products/dairy.jpg" },
+    { id: 5, name: "SS Custom Tanks", description: "Description for product five.", price: "59.99", image: "/images/products/custom.jpg" },
+    { id: 6, name: "SS Storage Silos", description: "Description for product six.", price: "59.99", image: "/images/products/silos.jpg" },
 ];
 
 export default function ProductPage() {
