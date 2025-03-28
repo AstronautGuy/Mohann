@@ -35,7 +35,7 @@ export default function ProductCard({ product }) {
                 <p className="text-gray-700 flex-grow font-light">{product.description}</p>
                 <div className="mt-4">
                     <span className="text-lg font-bold text-indigo-600">
-                        ${product.price}
+                        ₹{product.price}
                     </span>
                 </div>
             </motion.div>

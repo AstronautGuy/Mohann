@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="absolute inset-0" />
                 <div className="relative z-10 flex flex-col justify-center items-start h-full px-4 md:px-20">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-20">
-                        ORDER NOW
+                        INQUIRE NOW
                     </h2>
                     <p className="max-w-xl text-white mb-6 font-normal">
                         You can make a request for any of our services and we aim to reply
