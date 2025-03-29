@@ -1,7 +1,7 @@
 import "./globals.css";
 import Topbar from "../components/topbar";
 import Header from "../components/header";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import AOSInitializer from "@/components/AOSInitializer";
 import WhatsAppButton from "@/components/FloatingButtons";
 import "@fortawesome/fontawesome-free/css/all.min.css";
