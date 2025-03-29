@@ -9,9 +9,9 @@ import CeoQuote from "@/components/CeoQuote";
 export default function Home() {
     return (
         <main className="!pt-37">
-            <HeroSlider />
-            <WhyChooseUs />
-            <Products1 />
+            <HeroSlider/>
+            <WhyChooseUs/>
+            <Products1/>
             <div className="flex items-center">
                 <Image data-aos="fade-right"
                        data-aos-duration="2000"
@@ -20,11 +20,11 @@ export default function Home() {
                        alt="CEO"
                        src="/images/ceo.png" width={500} height={100}/>
                 <div data-aos="fade-left" data-aos-duration="2000" className="p-10 -ml-80 z-10 mr-30 bg-white h-48">
-                    <CeoQuote />
+                    <CeoQuote/>
                 </div>
             </div>
             <div className="hidden md:block">
-            <LogoScroller />
+                <LogoScroller/>
             </div>
         </main>
     );

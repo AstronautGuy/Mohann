@@ -142,7 +142,7 @@ export default function AboutSection() {
                 ></div>
 
                 {/* Rust Overlay */}
-                <div className="absolute inset-0 bg-[#8B4513] opacity-25"></div>
+                <div className="absolute inset-0 bg-[#be5c33] opacity-25"></div>
 
                 {/* Content */}
                 <div className="relative z-10 max-w-5xl mx-auto text-black">
