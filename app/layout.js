@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import AOSInitializer from "@/components/AOSInitializer";
 import WhatsAppButton from "@/components/FloatingButtons";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import PreloaderWrapper from "@/components/PreloaderWrapper";
 
 export const metadata = {
     title: "Mohann Engineers",
@@ -18,12 +19,14 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <body>
+        <PreloaderWrapper>
         <AOSInitializer />
         <Topbar />
         <Header />
         <main className="p-4">{children}</main>
         <Footer />
         <WhatsAppButton phoneNumber="919825039020" />
+        </PreloaderWrapper>
         </body>
         </html>
     );
