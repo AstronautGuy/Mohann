@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
         <>
@@ -21,7 +22,23 @@ export default function Header() {
                         <nav className="hidden md:flex items-center text-black font-bold uppercase">
                             <Link href="/about" className="hover:text-gray-400 px-4">About Us</Link>
                             <span className="h-5 w-0.5 bg-amber-600"></span>
-                            <Link href="/products" className="hover:text-gray-400 px-4">Products</Link>
+
+                            {/* Products with Dropdown */}
+                            <div className="relative group">
+                                <button className="hover:text-gray-400 px-4 uppercase">Products</button>
+
+                                {/* Dropdown Menu */}
+                                <div className="absolute mt-2 w-72 bg-white border p-2 border-gray-200 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 grid grid-cols-2 gap-4">
+                                    <Link href="/products/category1" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 1</Link>
+                                    <Link href="/products/category2" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 2</Link>
+                                    <Link href="/products/category3" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 3</Link>
+                                    <Link href="/products/category4" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 4</Link>
+                                    <Link href="/products/category5" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 5</Link>
+                                    <Link href="/products/category6" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 6</Link>
+                                    <Link href="/products/category7" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 7</Link>
+                                    <Link href="/products/category8" className="px-4 py-2 hover:bg-gray-100 border-b-2 border-black whitespace-nowrap">Category 8</Link>
+                                </div>
+                            </div>
                             <span className="h-5 w-0.5 bg-amber-600"></span>
                             <Link href="/projects" className="hover:text-gray-400 px-4">Project Supplies</Link>
                             <span className="h-5 w-0.5 bg-amber-600"></span>
